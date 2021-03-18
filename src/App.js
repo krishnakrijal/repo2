@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Button from './components/Button';
+
+const images = [
+  '/img/Rectangle 135.png',
+  '/img/Rectangle 136.png',
+  '/img/Rectangle 137.png',
+  '/img/Rectangle 207.png',
+];
+
+const icons = [
+  '/img/Icon awesome-fire.png',
+  '/img/Icon ionic-ios-thermometer.png',
+  '/img/Icon awesome-mountain.png',
+  '/img/Icon metro-directions-bike.png'
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="btn-1">
+      <Button images={images} icons={icons}/>
     </div>
   );
 }
